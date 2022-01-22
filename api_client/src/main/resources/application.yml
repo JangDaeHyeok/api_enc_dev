@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 10
+    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://server.msinfotech.co.kr:3306/msmart?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: msit!@#4
+  thymeleaf:
+    cache: false
+  mvc:
+    static-path-pattern: /static/**
+
+server:
+  port : 8081
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+logging:
+  level:
+    web: info
+    root: info
+    jdh.test.api: info
+
+banner:
+  location: banner.txt
